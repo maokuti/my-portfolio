@@ -18,7 +18,7 @@ https://maokuti.github.io/module-2-challenge/
 
 Below you will find a screenshot of the whole web page.
 
-![ScreenShot](assets/images/Portfolio-Screenshot.png)
+![ScreenShot](assets/images/Portfolio Screenshot.png)
 
 ## Credits
 
