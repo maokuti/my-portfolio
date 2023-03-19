@@ -12,13 +12,13 @@ N/A
 
 ## Link To Deployed Application
 
-https://maokuti.github.io/module-2-challenge/
+https://maokuti.github.io/my-portfolio/
 
 ## Usage
 
 Below you will find a screenshot of the whole web page.
 
-![ScreenShot](assets/images/Portfolio Screenshot.png)
+![ScreenShot](assets/images/portfolio.png)
 
 ## Credits
 
