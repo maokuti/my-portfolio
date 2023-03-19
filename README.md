@@ -18,7 +18,7 @@ https://maokuti.github.io/my-portfolio/
 
 Below you will find a screenshot of the whole web page.
 
-![ScreenShot](assets/images/portfolio.png)
+![ScreenShot](/images/portfolio.png)
 
 ## Credits
 
