@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: lightslategray;
 }
 
 h1,
@@ -16,8 +17,246 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: white;
 }
 
 p {
   margin: 0;
+}
+
+/*Grid Style*/
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+    "about"
+    "work"
+    "work"
+    "work"
+    "contact"
+  ;
+}
+
+.titlesection {
+  font-size: 40px;
+}
+
+/*Header + Navigation Bar Styles*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+#head {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: reverse flex-start;
+  align-content: center;
+  margin: 10px 0px 10px 10px;
+}
+
+#head h1 {
+  font-size: 70px;
+  padding-left: 20px;
+}
+
+#profilePicture {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#profilePicture img {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav p {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/*Hero Banner Styles*/
+
+.hero-banner {
+  margin: 0;
+  background-image: url(../images/skyrim1.jpg);
+  background-position: 15% 40%;
+  height: 150px;
+  margin-bottom: 20px;
+  display: grid;
+  align-content: end;
+  justify-content: end;
+}
+
+.hero-banner > div {
+  height: 35px;
+  margin: 10px 20px 10px 10px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+/*About Me Section Styles*/
+
+#about {
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "aboutSection aboutMetext"
+}
+
+#aboutSection {
+  grid-area: aboutSection;
+  margin: 10px;
+  padding: 20px;
+  border-right: 10px solid white;
+  display: flex;
+  justify-content: flex-end
+}
+
+#aboutMetext {
+  grid-area: aboutMetext;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  
+}
+
+/*Portfolio Section Styles*/
+
+#work {
+  grid-area: work;
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 50% 2fr 1fr;
+  grid-template-areas: 
+    "workSection project1 project1"
+    "workSection project2 project3"
+    "workSection project4 project5"
+}
+
+#workSection {
+  grid-area: workSection;
+  margin: 10px;
+  padding: 20px;
+  border-right: 10px solid white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url(../images/02-hero-bg.jpg);
+ }
+
+#project2 {
+  grid-area: project2;
+  background-image: url(../images/02-portfolio-1.jpg) 
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.projectStyles {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border: 4px solid white;
+  display: grid;
+  align-content: flex-start;
+  cursor: pointer;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+.projectStyles .heading {
+  transition: all 0.5s ease-in-out;
+}
+
+.projectStyles:hover,
+.projectStyles:hover .heading {
+  box-shadow: inset 0px 0px 8px white, 
+                    0px 0px 15px white
+}
+
+.link {
+  display: block;
+  width: 100%;
+  height: 7em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*Contact Section Styles*/
+
+#contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "contactSection contact1 contact2 contact3"
+}
+
+#contactSection {
+  grid-area: contactSection;
+  margin: 10px;
+  padding: 20px;
+  border-right: 10px solid white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact1 {
+  grid-area: contact1;
+}
+
+#contact2 {
+  grid-area: contact2;
+}
+
+#contact3 {
+  grid-area: contact3;
+}
+
+.contacts {
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
